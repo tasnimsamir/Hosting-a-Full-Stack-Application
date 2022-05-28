@@ -4,7 +4,7 @@
 You need a separate S3 Media bucket !
 
 `POSTGRES_HOST` : Your Postgres DB host  
-`POSTGRES_USERNAME` : Your Postgres DB username  
+`POSTGRES_USER` : Your Postgres DB username  
 `POSTGRES_DB` : Your Postgres DB username  
 `POSTGRES_PASSWORD` : Your Postgres DB username  
 `PORT` : Currently set to BOTH DB port && application port *Needs fix*  
