@@ -13,8 +13,6 @@ jobs:
       - run:
           name: install api dependencies
           command: npm run api:install
-      - checkin:
-          path: ./udagram-api
       - run:
           name: building and deploying the api
           command: npm run api:deploy
@@ -27,8 +25,6 @@ jobs:
       - run:
           name: install frontend dependencies
           command: npm run frontend:install
-      - checkin:
-          path: ./udagram-frontend
       - run:
           name: building and deploying the frontend
           command: npm run frontend:deploy
