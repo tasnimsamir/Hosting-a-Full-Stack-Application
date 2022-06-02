@@ -17,7 +17,7 @@ jobs:
       - run:
           name: building and deploying the api
           command: 
-            eb init udagram-api --platform node.js --region us-east-1  && npm run api:deploy
+            npm run init_app  && npm run api:deploy
 
   frontend:
     executor: node/default
