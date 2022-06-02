@@ -6,11 +6,9 @@ orbs:
 
 jobs:
   api:
-    working_directory: ~/app/udagram-api
+    working_directory: ~/app
     executor: node/default
     steps:
-      - checkout:
-          path: ~/app
       - run:
           name: install dependencies
           command: npm run api:install
@@ -19,11 +17,9 @@ jobs:
           command: npm run api:deploy
 
   frontend:
-    working_directory: ~/app/udagram-frontend
+    working_directory: ~/app
     executor: node/default
     steps:
-      - checkout:
-          path: ~/app
       - run:
           name: install dependencies
           command: npm run frontend:install
