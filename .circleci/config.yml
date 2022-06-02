@@ -6,8 +6,6 @@ orbs:
 
 jobs:
   api:
-    docker:
-      - image: "cimg/base:stable"
     executor: node/default
     steps:
       - checkout:
@@ -20,8 +18,6 @@ jobs:
           command: npm run api:deploy
 
   frontend:
-    docker:
-      - image: "cimg/base:stable"
     executor: node/default
     steps:
       - checkout:
