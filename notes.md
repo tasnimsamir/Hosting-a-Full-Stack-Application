@@ -1,34 +1,41 @@
 ## Steps:
 
-1. Connect Postgres Database locally
+* Deploying the Application
 
-2. Check that it works locally
+    1. Connect Postgres Database locally
 
-3. Create AWS RDS account
+    2. Check that it works locally
 
-4. Whitelist inbound traffic sources (VPC) to coonect to AWS DB
+    3. Create AWS RDS account
 
-5. Check DB connection with Postbird
+    4. Whitelist inbound traffic sources (VPC) to coonect to AWS DB
 
-6. Create S3 Bucket
+    5. Check DB connection with Postbird
 
-7. Create IAM dashboard
+    6. Create S3 Bucket
 
-8. Upload Static Files to S3 Bucket: ``` aws s3 cp --recursive --acl public-read ./www s3://tasnim-udagram/ ```
+    7. Create IAM dashboard
 
-9. Initialize elastic beanstalk application: ``` eb init udagram-api --platform node.js --region us-east-1 ```
+    8. Upload Static Files to S3 Bucket: ``` aws s3 cp --recursive --acl public-read ./www s3://tasnim-udagram/ ```
 
-10. Create elastic beanstalk environment: ``` eb create --sample udagram-api-dev ```
+    9. Initialize elastic beanstalk application: ``` eb init udagram-api --platform node.js --region us-east-1 ```
 
-11. Make sure we are using the environment: ``` eb use udagram-api-dev ```
+    10. Create elastic beanstalk environment: ``` eb create --sample udagram-api-dev ```
 
-12. Build our project
+    11. Make sure we are using the environment: ``` eb use udagram-api-dev ```
 
-13. Archiving & uploading built project
+    12. Build our project
 
-14. Writing ``` deploy:artifact: www/Archive.zip``` in config.yml in .elasticbeanstalk
+    13. Archiving & uploading built project
 
-15. deploy the project: ``` eb deploy udagram-api-dev ```
+    14. Writing ``` deploy:artifact: www/Archive.zip``` in config.yml in .elasticbeanstalk
+
+    15. deploy the project: ``` eb deploy udagram-api-dev ```
+
+    16. Writing project-level package.json
+
+* Creating a Pipeline
+    1. 
 
 
 ## Used Commands:

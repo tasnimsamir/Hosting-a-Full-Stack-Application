@@ -1,0 +1,33 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.2.0
+  aws-cli: circleci/aws-cli@2.0.0
+
+jobs:
+  api:
+    steps:
+      - node/install
+      - build and deploy
+      - run:
+          name: install dependencies
+          command: npm run api:install
+      - run:
+          name: building and deploying the app
+          command: npm run api:deploy
+
+  frontend:
+    steps:
+      - node/install
+      - build and deploy
+      - run:
+          name: install dependencies
+          command: npm run frontend:install
+      - run:
+          name: building and deploying the app
+          command: npm run frontend:deploy
+
+workflows:
+  udagram:
+    jobs:
+      - api
+      - frontend

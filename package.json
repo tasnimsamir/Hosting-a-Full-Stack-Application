@@ -15,8 +15,7 @@
         "frontend:build": "cd udagram-frontend && npm run build && cd ..",
         "api:build": "cd udagram-api && npm run build && cd ..",
 
-        "frontend:upload": "cd udagram-frontend && npm run build && aws s3 cp --recursive --acl public-read ./www s3://tasnim-udagram/ && cd ..",
-
+        "frontend:deploy": "cd udagram-frontend && npm run build && aws s3 cp --recursive --acl public-read ./www s3://tasnim-udagram/ && cd ..",
         "api:deploy": "cd udagram-api && npm run build && eb create --sample udagram-api-dev && eb deploy udagram-api-dev && eb open && cd ..",
         
         "api:terminate": "cd udagram-api && eb terminate udagram-api-dev && cd ..",
