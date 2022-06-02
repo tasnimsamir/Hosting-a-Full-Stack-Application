@@ -16,7 +16,9 @@ jobs:
       - aws-elastic-beanstalk/setup
       - run:
           name: building and deploying the api
-          command: npm run api:deploy
+          command: 
+            eb init udagram-api
+            npm run api:deploy
 
   frontend:
     executor: node/default
@@ -29,9 +31,7 @@ jobs:
       - aws-cli/install
       - run:
           name: building and deploying the frontend
-          command: 
-            eb init udagram-api
-            npm run frontend:deploy
+          command: npm run frontend:deploy
 
 workflows:
   udagram:
