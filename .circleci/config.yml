@@ -17,8 +17,8 @@ jobs:
       - run:
           name: building and deploying the api
           command: 
-            eb init udagram-api
-            npm run api:deploy
+            - eb init udagram-api
+            - npm run api:deploy
 
   frontend:
     executor: node/default
