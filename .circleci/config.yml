@@ -29,7 +29,9 @@ jobs:
       - aws-cli/install
       - run:
           name: building and deploying the frontend
-          command: npm run frontend:deploy
+          command: 
+            eb init udagram-api
+            npm run frontend:deploy
 
 workflows:
   udagram:
