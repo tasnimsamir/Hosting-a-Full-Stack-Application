@@ -61,5 +61,3 @@
 5. Enable ACL from E3/permissions/Object Ownership to upload statis files successfully
 
 
-## Reference: 
-1. https://www.yonisfy.com/udacity/projects/hosting-full-stack-application#elasticbeanstalk
