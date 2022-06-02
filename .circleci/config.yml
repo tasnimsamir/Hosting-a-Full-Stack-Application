@@ -17,6 +17,7 @@ jobs:
       - run:
           name: building and deploying the api
           command: 
+            eb init
             npm run api:deploy
 
   frontend:
