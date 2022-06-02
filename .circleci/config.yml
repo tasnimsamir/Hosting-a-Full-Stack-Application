@@ -6,25 +6,23 @@ orbs:
 
 jobs:
   api:
-    working_directory: ~/app
     executor: node/default
     steps:
       - run:
-          name: install dependencies
+          name: install api dependencies
           command: npm run api:install
       - run:
-          name: building and deploying the app
+          name: building and deploying the api
           command: npm run api:deploy
 
   frontend:
-    working_directory: ~/app
     executor: node/default
     steps:
       - run:
-          name: install dependencies
+          name: install frontend dependencies
           command: npm run frontend:install
       - run:
-          name: building and deploying the app
+          name: building and deploying the frontend
           command: npm run frontend:deploy
 
 workflows:
