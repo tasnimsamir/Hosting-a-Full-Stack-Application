@@ -25,6 +25,7 @@ jobs:
       - run:
           name: install frontend dependencies
           command: npm run frontend:install
+      - aws-cli/install
       - run:
           name: building and deploying the frontend
           command: npm run frontend:deploy
