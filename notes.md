@@ -35,7 +35,8 @@
     16. Writing project-level package.json
 
 * Creating a Pipeline
-    1. 
+    1. Writing .circleci/config.yml
+    2. Connect circleci with github
 
 
 ## Used Commands:
