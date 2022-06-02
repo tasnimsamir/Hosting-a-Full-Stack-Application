@@ -16,9 +16,7 @@ jobs:
       - aws-elastic-beanstalk/setup
       - run:
           name: building and deploying the api
-          command: 
-            eb init
-            npm run api:deploy
+          command: npm run api:deploy
 
   frontend:
     executor: node/default
