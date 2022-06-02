@@ -69,3 +69,7 @@
 5. Enable ACL from E3/permissions/Object Ownership to upload statis files successfully
 
 
+## References:
+
+1. https://circleci.com/developer/orbs/orb/circleci/aws-elastic-beanstalk
+
