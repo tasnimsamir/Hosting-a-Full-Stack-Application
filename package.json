@@ -18,9 +18,9 @@
         "frontend:deploy": "cd udagram-frontend && npm run build && aws s3 cp --recursive --acl public-read ./www s3://tasnim-udagram/ && cd ..",
         "api:deploy": "cd udagram-api && npm run build && eb deploy udagram-api-dev && eb open && cd ..",
         
-        "api:terminate": "eb terminate udagram-api-dev",
-        "api:init_app": "eb init udagram-api --platform node.js --region us-east-1",
-        "api:create_env": "eb create --sample udagram-api-dev "
+        "api:terminate": "cd udagram-api && eb terminate udagram-api-dev && cd ..",
+        "api:init_app": "cd udagram-api && eb init udagram-api --platform node.js --region us-east-1 && cd ..",
+        "api:create_env": "cd udagram-api && eb create --sample udagram-api-dev && cd .."
         
     },
     "repository": {
