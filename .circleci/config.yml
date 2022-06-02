@@ -8,6 +8,8 @@ jobs:
   api:
     executor: node/default
     steps:
+      - checkout:
+          path: ./
       - run:
           name: install api dependencies
           command: npm run api:install
@@ -18,6 +20,8 @@ jobs:
   frontend:
     executor: node/default
     steps:
+      - checkout:
+          path: ./
       - run:
           name: install frontend dependencies
           command: npm run frontend:install
