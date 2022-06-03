@@ -14,20 +14,20 @@
     * api
 
 * Frontend steps:
-    1. Spin Up Environment
-    2. Preparing Environment Variables
-    3. Checkout
-    4. Install dependencies
-    5. Install aws cli
-    6. Building and Deploying 
+    1. Spin Up Environment: install node js and its packages
+    2. Preparing Environment Variables:  exports all environment variables from CircleCI configuration to a .env file
+    3. Checkout: go to the root directory
+    4. Install dependencies: install packages in package.json
+    5. Install aws cli: to implement aws cli commands used in deployment
+    6. Building and Deploying: execute building and deploying commands in package.json scripts 
 
 * API steps:
-    1. Spin Up Environment
-    2. Preparing Environment Variables
-    3. Checkout
-    4. Install dependencies
-    5. Setting up Elastic Beanstalk cli
-    6. Building and Deploying 
+    1. Spin Up Environment:install node js and its packages
+    2. Preparing Environment Variables: exports all environment variables from CircleCI configuration to a .env file
+    3. Checkout: go to the root directory
+    4. Install dependencies: install packages in package.json
+    5. Setting up Elastic Beanstalk cli: to implement eb cli commands used in deployment
+    6. Building and Deploying: execute building and deploying commands in package.json scripts  
 
 
 * Workflow: 

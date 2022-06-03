@@ -35,5 +35,11 @@ jobs:
 workflows:
   udagram:
     jobs:
-      - frontend
-      - api
+      - frontend:
+          filters:
+              branches:
+                only: master
+      - api:
+          filters:
+              branches:
+                only: master
