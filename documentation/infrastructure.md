@@ -15,4 +15,4 @@ Project Infrastructure consists of three main components as shown in above figur
 
 3. AWS S3: for static files storage (like frontend files)
     * Endusers can access the application through S3 Bucket.
-    * URL: ``` http://tasnim-udagram.s3-website-us-east-1.amazonaws.com ```
+    * URL:  http://tasnim-udagram.s3-website-us-east-1.amazonaws.com 
