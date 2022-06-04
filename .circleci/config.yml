@@ -15,13 +15,17 @@ jobs:
           command: npm run api:install
       - aws-elastic-beanstalk/setup
       - run:
+          name: Initialize Application
+          command: 
+            npm run api:init_app 
+      - run:
           name: Setting Environment Varaibles and send it to EB
           command: 
             npm run api:setenv
       - run:
           name: building and deploying the api
           command: 
-            npm run api:init_app  && npm run api:deploy
+            npm run api:deploy
 
   frontend:
     executor: node/default
