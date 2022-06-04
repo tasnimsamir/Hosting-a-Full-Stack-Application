@@ -18,14 +18,16 @@ jobs:
           name: Initialize Application
           command: 
             npm run api:init_app 
-      - run:
-          name: Setting Environment Varaibles and send it to EB
-          command: 
-            npm run api:setenv
+      
       - run:
           name: building and deploying the api
           command: 
             npm run api:deploy
+
+      - run:
+          name: Setting Environment Varaibles and send it to EB
+          command: 
+            npm run api:setenv
 
   frontend:
     executor: node/default
