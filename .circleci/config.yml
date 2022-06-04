@@ -15,6 +15,10 @@ jobs:
           command: npm run api:install
       - aws-elastic-beanstalk/setup
       - run:
+          name: Setting Environment Varaibles
+          command: 
+            cd udagram-api && npm run setenv && cd ..
+      - run:
           name: building and deploying the api
           command: 
             npm run api:init_app  && npm run api:deploy
