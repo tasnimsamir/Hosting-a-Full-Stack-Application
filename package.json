@@ -1,7 +1,7 @@
 {
     "name": "hosting-a-full-stack-application",
     "scripts": {
-        "frontend:install": "cd udagram-frontend && npm install && cd ..",
+        "frontend:install": "cd udagram-frontend && npm install --prod && cd ..",
         "api:install": "cd udagram-api && npm install && cd ..",
 
         "frontend:start": "cd udagram-frontend && npm run start && cd ..",
