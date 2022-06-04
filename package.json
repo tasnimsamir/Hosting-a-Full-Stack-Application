@@ -20,7 +20,7 @@
         "api:terminate": "cd udagram-api && eb terminate udagram-api-dev && cd ..",
         "api:init_app": "cd udagram-api && eb init udagram-api --platform node.js --region us-east-1 && cd ..",
         "api:create_env": "cd udagram-api && eb create --sample udagram-api-dev && cd ..",
-        "api:setenv": "cd udagram-api && eb setenv port=`echo ${PORT}` POSTGRES_HOST=`echo ${POSTGRES_HOST}` POSTGRES_PORT=`echo ${POSTGRES_PORT}` POSTGRES_USERNAME=`echo ${POSTGRES_USER}` POSTGRES_PASSWORD=`echo ${POSTGRES_PASSWORD}` POSTGRES_DB=`echo ${POSTGRES_DB}` && cd .."
+        "api:setenv": "cd udagram-api && eb setenv port=8000 POSTGRES_HOST=database-2.cf8kg2nkreyv.us-east-1.rds.amazonaws.com POSTGRES_PORT=5432 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=Password123$ POSTGRES_DB=postgres && cd .."
     },
     "repository": {
         "type": "git",
