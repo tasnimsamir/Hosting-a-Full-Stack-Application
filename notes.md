@@ -38,6 +38,8 @@
     1. Writing .circleci/config.yml
     2. Connect circleci with github
 
+* Documentation
+
 
 ## Used Commands:
 
