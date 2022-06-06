@@ -13,8 +13,7 @@ jobs:
       - run:
           name: install api dependencies
           command: npm run api:install
-      - aws-elastic-beanstalk/setup
-      
+      - aws-elastic-beanstalk/setup     
       - run:
           name: building and deploying the api
           command: 
